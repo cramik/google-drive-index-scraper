@@ -10,7 +10,7 @@ selenium (available via pip)
 chrome (for chromedriver to work)
 ```
 
-# Usage
+# Usage
 
 ```
 Usage:
