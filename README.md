@@ -6,8 +6,8 @@ Unfortunately, **[REDACTED]** has a download quota. Because of this, I will not 
 
 # Requirements
 ```
-selenium
-chrome (for chromedriver) to work
+selenium (available via pip)
+chrome (for chromedriver to work)
 ```
 
 # Usage
