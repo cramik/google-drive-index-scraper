@@ -7,7 +7,6 @@ from selenium.webdriver.common.keys import Keys
 import sys
 
 base_url = "https://[INSERT URL HERE]/0:"
-scrape_layer_one_files = 0
 timeout = 30
 driver = get_driver() #wanted to initialize driver in main, but it meant it would've had to have been passed through every function
 
