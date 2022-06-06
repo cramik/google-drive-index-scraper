@@ -31,9 +31,9 @@ def scrape_layered_folder(prev_index):
 	ec.presence_of_element_located((By.XPATH,"//div[@id='list']/div/a")), \
 	ec.presence_of_element_located((By.XPATH,"//div[@id='list']/a"))))
 	
-	files_layered = driver.find_elements(By.XPATH, "//div[@id='list']/div")
-	for file_layered in files_layered:
-		link = file_layered.find_element(By.XPATH, "./a[1]").get_attribute("href")
+	svgs_layered = driver.find_elements(By.CSS_SELECTOR, "svg.float-end")
+	for svg_layered in svgs_layered:
+		link = svg_layered.find_element(By.XPATH, "./..").get_attribute("href") #gets the parent element's href
 		print(link)
 	
 	folders_layered = driver.find_elements(By.XPATH, "//div[@id='list']/a")
